@@ -1,0 +1,33 @@
+CONTRÔLES EFFECTUÉS — 8 NOVEMBRE 2026
+====================================
+Moteur de contrôle : Chromium headless / Playwright.
+Le rendu HTML embarqué a été utilisé (les navigations sont bloquées dans
+le navigateur de test). La logique de sauvegarde/reprise a été contrôlée
+avec une API localStorage émulée ; elle n’est pas un test d’un poste de collège.
+
+Résultats :
+- Parcours complet des cinq défis : 1000 / 1000, douze critères réussis.
+- Erreurs volontaires corrigées : compteur conservé, points attribués une fois.
+- Retour sur un exercice réussi : aucun double comptage.
+- Sélection d’un mauvais fichier puis correction : fonctionnement vérifié.
+- Glisser-déposer interne galerie/fiche et déplacement d’image : vérifiés.
+- Alternative accessible au clic : vérifiée et distinguée dans le bilan.
+- Verrou du ratio, dimensions et contrôle 8 × 5 cm : vérifiés.
+- Fenêtres d’aide et fiche modèle : vérifiées.
+- Téléchargement du .odt depuis le HTML autonome : vérifié.
+- Galerie autonome : deux images 800 × 500 intégrées et correctement affichées.
+- Export JSON : relevé complet, barème et compteurs vérifiés.
+- Reprise d’une progression : logique vérifiée avec stockage émulé.
+- Affichage étroit 390 px : aucune barre de défilement horizontale de page.
+- Bilan vierge, complet et avec champs longs : une page A4 dans les trois cas.
+- Contrôle visuel des rendus d’écran et de l’impression : effectué.
+- Fiche ODT de départ et modèle corrigé : ouverts et rendus par LibreOffice,
+  une page A4 chacun, avec vérification visuelle du modèle.
+- Aucune erreur JavaScript relevée pendant le parcours de test.
+
+À vérifier sur le poste réel de l’établissement :
+- glissement entre Firefox et LibreOffice Writer (deux applications distinctes) ;
+- libellés et emplacement des commandes dans la version de Writer installée ;
+- réglages d’impression Firefox et imprimante de la salle ;
+- accès au dossier P: et politique de téléchargement de l’établissement.
+Une méthode de secours par PNG enregistré puis Insertion > Image est fournie.
